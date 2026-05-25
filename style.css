@@ -1,0 +1,146 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #355137;
+    background-image: linear-gradient(180deg, #e31721 0%, #208b0f 100%);
+    color: #0e11d0;
+    font-family: 'Fredoka', sans-serif;
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #0ea5e9;
+}
+
+.links a {
+    text-decoration: none;
+    color: #64748b;
+    margin-left: 25px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.links a:hover {
+    color: #0ea5e9;
+}
+
+.hero {
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.avatar-wrapper {
+    background: white;
+    padding: 10px;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    display: inline-block;
+    box-shadow: 0 10px 25px rgba(14, 165, 233, 0.1);
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin: 10px 0;
+    color: #0c4a6e;
+}
+
+.tagline {
+    font-size: 1.3rem;
+    color: #0ea5e9;
+    margin-bottom: 35px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #ffffff;
+    color: #0ea5e9;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 700;
+    border: 2px solid #0ea5e9;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #0ea5e9;
+    color: white;
+    transform: scale(1.05);
+}
+
+.section {
+    padding: 80px 10%;
+}
+
+.cloud-card {
+    background: white;
+    padding: 40px;
+    border-radius: 50px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    border: 3px solid #e0f2fe;
+}
+
+.cloud-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.cloud-skill {
+    background: white;
+    padding: 40px 20px;
+    border-radius: 40px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.03);
+}
+
+.cloud-skill:hover {
+    transform: translateY(-8px);
+    border-color: #7dd3fc;
+    box-shadow: 0 20px 30px rgba(14, 165, 233, 0.1);
+}
+
+.icon {
+    font-size: 3rem;
+}
+
+footer {
+    padding: 50px;
+    text-align: center;
+    color: #94a3b8;
+}
+
+@media (max-width: 600px) {
+    h1 { font-size: 2.5rem; }
+    .hero { height: auto; padding: 50px 0; }
+}
